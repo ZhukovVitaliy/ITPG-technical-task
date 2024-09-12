@@ -1,0 +1,44 @@
+.partners {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 344px;
+
+  &__box {
+    margin-bottom: 20px;
+  }
+
+  /* We've partnered with the best */
+
+  &__title {
+    max-width: 325px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 110%;
+  }
+
+  &__description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    gap: 21px;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__logo-item {
+  }
+
+  &__logo {
+    // max-width: 100px;
+    // height: auto;
+  }
+}

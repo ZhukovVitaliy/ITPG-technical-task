@@ -1,0 +1,15 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--spacing-medium);
+}
+
+.flex {
+  display: flex;
+  gap: var(--spacing-medium);
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
