@@ -20,12 +20,12 @@ const swiper = new Swiper('.swiper', {
   //.swiper-slide {
   // width:auto;
   // }
-  // rbeakpoints: {
-  //   320: {
-  //     slidesPerView: 1,
-  //   },
-  //   600: {
-  //     slidesPerView: auto,
-  //   },
-  // },
+  rbeakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    600: {
+      slidesPerView: 3,
+    },
+  },
 });

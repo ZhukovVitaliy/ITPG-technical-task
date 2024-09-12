@@ -9,8 +9,6 @@
     margin-bottom: 20px;
   }
 
-  /* We've partnered with the best */
-
   &__title {
     max-width: 325px;
 
@@ -28,7 +26,6 @@
   &__logos {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: center;
     gap: 21px;
     list-style: none;
     padding: 0;
@@ -38,7 +35,60 @@
   }
 
   &__logo {
-    // max-width: 100px;
-    // height: auto;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    //
+    max-width: 1200px;
+    padding-left: 5;
+    padding-right: 5;
+    margin-bottom: 160px;
+    gap: 20px;
+
+    &__box {
+      margin: 0 auto;
+      margin-bottom: 0px;
+      max-width: 390px;
+    }
+
+    &__title {
+      max-width: 390px;
+
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 110%;
+    }
+
+    &__description {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 130%;
+    }
+
+    &__logos {
+      max-width: 540px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: flex-start;
+      padding: 0px;
+      gap: 32px 48px;
+
+      // justify-content: space-between; // Распределяем логотипы по ширине
+      // gap: 40px; // Увеличиваем расстояние между логотипами
+    }
+
+    &__logo-item {
+      // flex: 1 1 calc(33.333% - 40px); // Логотипы будут занимать треть ширины
+      // max-width: 200px; // Ограничиваем максимальную ширину логотипов
+    }
+
+    &__logo {
+      // width: 100%; // Логотипы будут растягиваться по ширине контейнера
+      // height: auto; // Сохраняем пропорции изображений
+    }
   }
 }
