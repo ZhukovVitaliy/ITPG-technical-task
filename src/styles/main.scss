@@ -5,16 +5,13 @@
 
 @import 'layouts/container';
 @import 'layouts/grid';
-@import 'layouts/responsive';
+@import 'layouts/flex';
 
 @import 'components/partners';
 @import 'components/why-choose-us';
 @import 'components/reviews';
 
 // :root {
-//   --primary-color: #36384f;
-//   --secondary-color: #2196f3;
-//   --body-color: #f2efdb;
 //   --font-main: 'DM Sans', sans-serif;
 //   --spacing-small: 8px;
 //   --spacing-medium: 16px;

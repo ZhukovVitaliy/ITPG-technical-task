@@ -1,9 +1,4 @@
-// import Swiper from 'swiper';
-// import 'swiper/swiper-bundle.css';
-
 const swiper = new Swiper('.swiper', {
-  // direction: 'horizontal',
-  // loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -12,20 +7,21 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  // loop: true,
   grabCursor: true,
-  // slidesPerView: 3,
-  // slidesPerView: auto,
-
-  //.swiper-slide {
-  // width:auto;
-  // }
-  rbeakpoints: {
+  breakpoints: {
     320: {
       slidesPerView: 1,
+      spaceBetween: 10,
     },
-    600: {
-      slidesPerView: 3,
+    768: {
+      initialSlide: 1,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+
+      slidesPerView: 2,
+      spaceBetween: 25,
+
+      slidesOffsetBefore: -120,
     },
   },
 });
